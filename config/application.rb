@@ -8,6 +8,10 @@ Bundler.require(*Rails.groups)
 
 module RecruitorTools
   class Application < Rails::Application
+
+    config.exceptions_app = routes
+    # from https://medium.com/rails-ember-beyond/error-handling-in-rails-the-modular-way-9afcddd2fe1b
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
